@@ -1,0 +1,156 @@
+[00:00:02.429] Server  LOG     
+[00:00:02.429] Server  LOG        We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+[00:00:02.430] Server  LOG        The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+
+[00:00:02.431] Server  LOG        	- include was updated to add '.next/dev/types/**/*.ts'
+[00:00:02.431] Server  LOG     
+[00:00:02.432] Server  LOG        The following mandatory changes were made to your tsconfig.json:
+
+[00:00:02.432] Server  LOG        	- jsx was set to react-jsx (next.js uses the React automatic runtime)
+[00:00:02.432] Server  LOG     
+[00:00:02.732] Server  LOG      ✓ Ready in 2.1s
+[00:00:08.212] Server  LOG      ○ Compiling / ...
+[00:00:09.101] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:09.436] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:09.436] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:09.436] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765466038817}
+[00:00:28.641] Server  LOG      ✓ Compiled in 49ms
+[00:00:29.206] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[00:00:29.206] Browser ERROR   Image is missing required "src" property: <img>
+[00:00:30.233] Server  LOG      ✓ Compiled in 49ms
+[00:00:30.604] Server  LOG      ✓ Compiled in 50ms
+[00:00:31.202] Browser ERROR   ./components/about.tsx:69:52
+Parsing ecmascript source code failed
+  67 |               <div className="relative bg-card border border-border rounded-2xl p-8 overflow-hidden">
+  68 |                 <div className="relative w-full aspect-square rounded-xl overflow-hidden">
+> 69 |                   <Image src=" alt="Profile Picture" fill className="object-cover" />
+     |                                                    ^^^^^^^^^^^^^^^^^^
+  70 |                 </div>
+  71 |               </div>
+  72 |             </div>
+
+Expected '</', got 'string literal ( fill className=, " fill className=")'
+
+Import traces:
+  Client Component Browser:
+    ./components/about.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/about.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:00:31.202] Browser ERROR   ./components/about.tsx:69:31
+Parsing ecmascript source code failed
+  67 |               <div className="relative bg-card border border-border rounded-2xl p-8 overflow-hidden">
+  68 |                 <div className="relative w-full aspect-square rounded-xl overflow-hidden">
+> 69 |                   <Image src= alt="Profile Picture" fill className="object-cover" />
+     |                               ^^^
+  70 |                 </div>
+  71 |               </div>
+  72 |             </div>
+
+Expected '</', got 'alt'
+
+Import traces:
+  Client Component Browser:
+    ./components/about.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/about.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:00:32.208] Browser ERROR   ./components/about.tsx:69:33
+Parsing ecmascript source code failed
+  67 |               <div className="relative bg-card border border-border rounded-2xl p-8 overflow-hidden">
+  68 |                 <div className="relative w-full aspect-square rounded-xl overflow-hidden">
+> 69 |                   <Image src={} alt="Profile Picture" fill className="object-cover" />
+     |                                 ^^^
+  70 |                 </div>
+  71 |               </div>
+  72 |             </div>
+
+Expected '</', got 'alt'
+
+Import traces:
+  Client Component Browser:
+    ./components/about.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/about.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:00:32.774] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:00:32.775] Browser ERROR   uncaughtError: ReferenceError: P is not defined
+[00:00:32.787] Server  LOG      ✓ Compiled in 45ms
+[00:00:32.922] Server  ERROR   D:\PORTOFOLIO\student-portfolio-2.0\.next\dev\server\chunks\ssr\_0d5d0c0c._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:32.924] Server  ERROR    ⨯ ReferenceError: Pro is not defined
+[00:00:32.955] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:00:32.983] Server  LOG      ✓ Compiled in 11ms
+[00:00:33.162] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:34.211] Browser ERROR   uncaughtError: ReferenceError: Pro is not defined
+[00:00:34.636] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:00:34.648] Server  LOG      ✓ Compiled in 45ms
+[00:00:34.771] Server  ERROR   D:\PORTOFOLIO\student-portfolio-2.0\.next\dev\server\chunks\ssr\_0d5d0c0c._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:34.771] Server  ERROR    ⨯ ReferenceError: Profi is not defined
+[00:00:34.791] Server  LOG      ✓ Compiled in 52ms
+[00:00:34.796] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:00:34.974] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:35.164] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:00:35.165] Browser ERROR   uncaughtError: ReferenceError: Profile is not defined
+[00:00:35.248] Server  ERROR   D:\PORTOFOLIO\student-portfolio-2.0\.next\dev\server\chunks\ssr\_0d5d0c0c._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:35.248] Server  ERROR    ⨯ ReferenceError: Profilep is not defined
+[00:00:35.262] Server  LOG      ✓ Compiled in 36ms
+[00:00:35.413] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:36.079] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:00:36.079] Browser ERROR   uncaughtError: ReferenceError: Profilep is not defined
+[00:00:36.177] Server  LOG      ✓ Compiled in 51ms
+[00:00:36.351] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:37.201] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:37.201] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:37.201] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765466065920}
+[00:01:17.193] Server  LOG      ✓ Compiled in 45ms
+[00:01:18.197] Browser ERROR   ./components/footer.tsx:9:80
+Parsing ecmascript source code failed
+   7 |         <div className="grid md:grid-cols-3 gap-8 mb-8">
+   8 |           <div>
+>  9 |             <h3 className="text-lg import { Linkedin, Mail } from "lucide-react"
+     |                                                                                ^
+  10 |
+  11 | export default function Footer() {
+  12 |   const currentYear = new Date().getFullYear()
+
+Unterminated string constant
+
+Import traces:
+  Client Component Browser:
+    ./components/footer.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/footer.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:01:21.105] Server  LOG      ✓ Compiled in 66ms
+[00:01:30.273] Server  LOG      ✓ Compiled in 101ms
+[00:01:42.095] Server  LOG      ✓ Compiled in 53ms
+[00:01:51.057] Server  LOG      ✓ Compiled in 43ms
+[00:02:41.997] Server  LOG      ✓ Compiled in 38ms
+[00:03:02.840] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:02.986] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:03:02.986] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:03:02.986] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765466212365}
+[00:03:11.121] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:11.246] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:03:11.246] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:03:11.246] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765466220626}
+[00:05:14.179] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:14.304] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:05:14.304] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:05:14.304] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765466343683}
